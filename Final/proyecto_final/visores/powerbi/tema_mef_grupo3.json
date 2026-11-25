@@ -1,0 +1,48 @@
+{
+  "name": "UNMSM BI Grupo 3 - MEF Municipal",
+  "dataColors": [
+    "#0F2C59",
+    "#1E4E8C",
+    "#3B82F6",
+    "#1B7F5B",
+    "#D97706",
+    "#B91C1C",
+    "#64748B",
+    "#0EA5E9"
+  ],
+  "background": "#F8FAFC",
+  "foreground": "#0F2C59",
+  "tableAccent": "#0F2C59",
+  "maximum": "#0F2C59",
+  "center": "#60A5FA",
+  "minimum": "#E2E8F0",
+  "good": "#1B7F5B",
+  "neutral": "#D97706",
+  "bad": "#B91C1C",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "fontColor": { "solid": { "color": "#0F2C59" } },
+            "fontFamily": "Segoe UI Semibold",
+            "fontSize": 13
+          }
+        ],
+        "background": [
+          {
+            "color": { "solid": { "color": "#FFFFFF" } },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#E2E8F0" } },
+            "radius": 6
+          }
+        ]
+      }
+    }
+  }
+}

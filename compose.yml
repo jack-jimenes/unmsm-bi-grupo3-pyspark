@@ -1,0 +1,13 @@
+services:
+  transformers-networks2:
+    image: jupyter/pyspark-notebook:4d70cf8da953
+    
+    ports:
+      - 3050:3050
+      - "8000:8888"
+      - "4040:4040"
+    environment:
+      - JUPYTER_TOKEN=desarrollo
+
+    volumes:
+      - ./:/home/jovyan

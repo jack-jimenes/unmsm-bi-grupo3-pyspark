@@ -1,0 +1,59 @@
+# ==============================================================================
+# UNMSM FISI - Inteligencia de Negocios (Grupo 3)
+# .gitignore estricto: prohibido subir Parquets, CSVs, .pbix, backups ni >100 MB
+# ==============================================================================
+
+# Datos crudos, capas Medallón, backups locales y artefactos pesados (>100 MB)
+*.parquet
+*.parquet/
+*.csv
+*.rar
+*.zip
+*.7z
+*.tar
+*.gz
+*.pbix
+*.pbit
+*.crc
+_SUCCESS
+
+# Directorios de datos Medallón y backups locales
+Labos/HyM/bronce/
+Labos/HyM/silver/
+Labos/HyM/gold/
+Final/proyecto_final/raw/
+Final/proyecto_final/bronze/
+Final/proyecto_final/silver/
+Final/proyecto_final/gold/
+Final/proyecto_final/gold_marts/
+Final/proyecto_final/audit/
+_local_backups/
+spark-warehouse/
+
+# Entornos virtuales, Python y cachés de Jupyter/Docker
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.cache/
+.config/
+.ipython/
+.jupyter/
+.local/
+.npm/
+
+# Sistema operativo e IDE
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Permitir explícitamente assets livianos y documentación oficial
+!Final/proyecto_final/assets/
+!Final/proyecto_final/assets/*.geojson
+!Final/proyecto_final/visores/powerbi/*.json
