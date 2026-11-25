@@ -7,7 +7,7 @@
 2. Ir a **Ver → Temas → Buscar temas** y seleccionar [`tema_mef_grupo3.json`](tema_mef_grupo3.json) (color primario `#0F2C59`).
 
 ## 2. Conexión a Capa Gold (Solo Municipalidades `NIVEL_GOBIERNO = 'M'`)
-Descargar la carpeta `gold/` (~145 MB) desde el Google Drive del Grupo 3 y colocarla en `Final/proyecto_final/gold/` (o conectar mediante Power Query `Parquet.Document`).
+Descargar `proyecto_final.rar` (`605.5 MB`) desde el [Drive Examen Final del Grupo 3](https://drive.google.com/drive/folders/1jJsw07zEPqVG2ouP7SlyjXg3dKkhwx5K) y extraer **únicamente** la carpeta `gold/` (`154.01 MB`) en `Final/proyecto_final/gold/` (o conectar mediante Power Query `Parquet.Document`). El `.pbix` consolidado se sube a la carpeta **`INTEGRANTES/`** del mismo Drive (nunca a GitHub).
 
 ### Modelo Galaxy Schema (3 Hechos + 7 Dimensiones)
 - **Tablas de Hechos (3):**
