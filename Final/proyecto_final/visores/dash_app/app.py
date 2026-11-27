@@ -100,21 +100,33 @@ app.layout = dbc.Container(
                 dbc.Col(
                     [
                         dbc.Row(id="kpi-row", className="mb-3"),
-                        dbc.Row(
-                            [
-                                dbc.Col(dcc.Graph(id="fig-mapa-peru"), width=6),
-                                dbc.Col(dcc.Graph(id="fig-propios-vs-transf"), width=6),
-                            ]
-                        ),
-                        dbc.Row(
-                            [
-                                dbc.Col(dcc.Graph(id="fig-tendencia-autonomia"), width=12),
-                            ]
+                        dcc.Loading(
+                            type="circle",
+                            color=PRIMARY,
+                            children=[
+                                dbc.Row(
+                                    [
+                                        dbc.Col(dcc.Graph(id="fig-mapa-peru"), width=6),
+                                        dbc.Col(dcc.Graph(id="fig-propios-vs-transf"), width=6),
+                                    ]
+                                ),
+                                dbc.Row(
+                                    [
+                                        dbc.Col(dcc.Graph(id="fig-tendencia-autonomia"), width=12),
+                                    ]
+                                ),
+                            ],
                         ),
                     ],
                     width=9,
                 ),
             ]
+        ),
+        html.P(
+            "Fuente: MEF — Transparencia Económica (Consulta Amigable), Gold Marts PySpark | "
+            "Filtro NIVEL_GOBIERNO = 'M' | Actualizado: 27/11/2026",
+            className="text-muted",
+            style={"fontSize": "0.8rem", "marginTop": "16px", "textAlign": "center"},
         ),
     ],
     fluid=True,
